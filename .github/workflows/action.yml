@@ -24,7 +24,7 @@ jobs:
       run: |
         git config --global user.name "auto-update-bot"
         git config --global user.email "auto-update-bot@users.noreply.github.com"
-        git remote set-url origin https://${{ secrets.LIV_TOKEN }}@github.com/abid58b/SonyLivPlayList.git
+        git remote set-url origin https://${{ secrets.LIV_TOKEN }}@github.com/nazhoss/SonyLivPlayList.git
     - name: Fetch data from APIs
       run: |
         curl -o sonyliv.json ${{ secrets.SONYLIV_JSON_API }}
